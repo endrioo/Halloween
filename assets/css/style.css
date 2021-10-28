@@ -21,6 +21,8 @@ html{
 /* body */
 body {
     background-image: linear-gradient(90deg, #FFA62E,  #EA4D2C );
+    background-repeat: no-repeat;
+    background-color: #EA4D2C;
     margin: auto;
     position: relative;
 }
