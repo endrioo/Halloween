@@ -24,6 +24,7 @@ body {
     background-repeat: no-repeat;
     background-color: #EA4D2C;
     margin: auto;
+    overflow-x: hidden;
     position: relative;
 }
 
