@@ -1,0 +1,639 @@
+/* import font */
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');  
+
+/* haunting attraction */
+@import url('http://fonts.cdnfonts.com/css/haunting-attraction');
+
+/* style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* body */
+body {
+    background-image: linear-gradient(90deg, #FFA62E,  #EA4D2C );
+    margin: auto;
+    position: relative;
+}
+
+/* custom scroll bar */
+body::-webkit-scrollbar {
+    background-color: #3f3d3b;
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2a2725;
+    border-radius: 10px;
+}
+
+/* fixed */
+.fixed {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    z-index: 1000;
+}
+
+.fixed.active {
+    background-image: linear-gradient(90deg, #f94001, #f96209);
+}
+
+/* nav */
+nav {
+    width: 100%;
+    max-width: 1000px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* nav logo */
+nav h2 span {
+    margin-right: 10px;
+}
+
+nav h2 {
+    font-family: 'Haunting Attraction', sans-serif;
+    color: white;
+    letter-spacing: 3px;
+}
+
+/* nav section bar */
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul li.special {
+    padding: 8px 25px;
+    border: 2px solid white;
+    border-radius:15px ;
+}
+
+nav ul li.special:hover {
+    transform: translateY(-5px);
+    transition: all 0.8s;
+}
+
+nav ul li.normal span {
+    position: absolute;
+    bottom: -25px;
+    font-size: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+
+nav ul li:hover span {
+    visibility: visible;
+}
+
+nav ul li.active span {
+    visibility: visible;
+}
+
+/* hero */
+.hero {
+    width: 100%;
+    margin: 90px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+}
+
+
+/* hero text */
+.hero h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.hero h1 {
+    font-family: 'Haunting Attraction', sans-serif;
+    letter-spacing: 4px;
+    font-size: 50px;
+    line-height: 45px;
+    color: white;
+}
+
+
+.hero .text {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+.hero p {
+    color: white;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.hero button {
+    width: 50%;
+    margin-top: 30px;
+    padding: 6px;
+    background-color: #ff5f00;
+    background-image: linear-gradient(90deg, #f94001, #f96209);
+    border:2px solid #ff5f00;
+    border-radius: 30px 78px ;
+    color: white;
+    font-weight: 700;
+}
+
+/* main */
+main {
+    width: 100%;
+    margin: 40px auto 0 auto;
+    max-width: 1000px;
+}
+
+
+/* list */
+.list {
+    width: 100%;
+}
+
+.list h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* list item */
+.list .item {
+    width: 80%;
+    margin: 30px auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.list .item .box {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list .item .box span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.list .item .box span img {
+    height: 200px;
+}
+
+.list .item .box h4 {
+    text-align: center;
+    color: white;
+}
+
+.list .item .box p {
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.about .text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .text h2 {
+    font-family: 'Haunting Attraction', sans-serif;
+    letter-spacing: 3px;
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+.about .text p {
+    font-size: 14px;
+    text-align: end;
+    color: white;
+}
+
+.about img {
+    width: 70%;
+}
+
+
+/* product */
+.product {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.product .product-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product .product-head h2 {
+    font-family: 'Haunting Attraction', sans-serif;
+    letter-spacing: 3px;
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+}
+
+.product .product-head ul li {
+    display: inline-block;
+    margin: 15px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.product .product-head ul li span {
+    position: absolute;
+    bottom: -25px;
+    font-size: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+
+
+.product .product-head ul li.active span {
+    visibility: visible;
+}
+
+.product .product-head ul li:hover span {
+    visibility: visible;
+}
+
+/* product container */
+.product .product-container {
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product .product-container .item {
+    width: 17%;
+    height: auto;
+    background-image: linear-gradient(90deg, #f94001, #f96209);
+    margin-top:22px ;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product .product-container .item:hover img {
+    transform: translateY(-8px);
+}
+
+.product .product-container .item:hover span {
+    transform: translateX(0);
+}
+
+.product .product-container .item .img {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product .product-container .item .img img {
+    height: 100%;
+    max-width: 100%; 
+    transition: all 0.6s;
+}
+
+.product .product-container .item .detail {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product .product-container .item .detail h4 {
+    text-align: center;
+    color: white;
+}
+
+.product .product-container .item .detail p {
+    text-align: center;
+    color: white;
+}
+
+.product .product-container .item span {
+    position: absolute;
+    bottom: -2px;
+    right: -3px;
+    background-color: #f94001;
+    padding: 5px 13px; 
+    border: 1px solid #ff5f00;
+    transform: translateX(100%);
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.product .product-container .item span i {
+    font-size: 18px;
+    color: white;
+}
+
+
+
+.splide__slide {
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.splide__slide div {
+    background-image: linear-gradient(90deg, #f94001, #f96209);
+    border-radius: 12px;
+    height: 100%;
+    padding: 15px;
+}
+
+.splide__slide p {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.splide__slide h4 {
+    color: white;
+    text-align: center;
+}
+
+.review h1 {
+    font-family: 'Haunting Attraction', sans-serif;
+    letter-spacing: 3px;
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.review  {
+    width: 100%;
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.review img {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: -60px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px auto 50px auto;
+    position: relative;
+    max-width: 1000px;
+}
+
+footer .intro h4 {
+    font-size: 18px;
+    color: white;
+}
+
+footer .intro h4 i {
+    margin-right: 10px;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+footer .intro .sosialmedia {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+footer .intro .sosialmedia span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, #f94001, #f96209);
+    transition: all 0.6s;
+}
+
+footer .intro .sosialmedia span:hover {
+    transform: translateY(-10px);
+}
+
+footer .intro .sosialmedia span i {
+    color: white;
+    font-size: 16px;
+}
+
+footer .side h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+footer .side ul li {
+    list-style: none;
+    color: #eee;
+    cursor: pointer;
+}
+footer .side ul li:hover {
+    color: white;
+}
+
+
+footer .img1 {
+    position: absolute;
+    width: 130px;
+    top: -50px;
+    right: -220px;
+    transition: all 0.6s;
+}
+
+
+footer .img2 {
+    position: absolute;
+    width: 160px;
+    top: -50px;
+    left: -220px;
+    transition: all 0.6s;
+}
+
+.copyright h3 {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+footer img:hover {
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width: 1030px) {
+
+    body {
+        max-width: 95%;
+    }
+
+    nav {
+        max-width: 95%;
+    }
+
+    .product .product-container .item {
+        width: 19%;
+    }
+
+    .product .product-container .item .img {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav ul li {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .text {
+        width: 95%;
+        text-align: center;
+        order: 2;
+    }
+
+    .hero button {
+        margin: 20px auto;
+    }
+
+    .hero img {
+        height: 400px;
+        transform: translateX(-20px);
+    }
+
+    .list .item {
+        flex-direction: column;
+    }
+
+    .list .item .box {
+        width: 85%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .text {
+        width: 90%;
+    }
+
+    .about .text h2 {
+        text-align: center;
+    }
+
+    .about .text p {
+        text-align: center;
+    }
+
+    .about .img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about img {
+        width: 80%;
+        margin-top: -50px;
+    }
+
+    .product .product-container .item {
+        width: 45%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .intro .sosialmedia {
+        width: 40%;
+    }
+    
+    footer .side {
+        margin: 20px 0;
+    }
+
+    footer .img1 {
+        top: 0;
+        right: -20px;
+    }
+
+    footer .img2 {
+        top: 340px;
+        left: 150px;
+    }
+
+    .product .product-head ul li {
+        margin: 10px;
+        font-size: 12px;
+    }
+}
